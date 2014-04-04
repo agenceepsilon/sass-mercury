@@ -1,0 +1,15 @@
+// ============================================================================================= //
+// Function: rem
+//
+// Description: font size in REM
+//
+// PARAMETERS:
+//
+//      $target: size number
+//      $context: context for calculation (16 by default)
+//
+// ============================================================================================= //
+
+@function rem($target, $context: 16) {
+    @return ($target/$context) * 1rem;
+}

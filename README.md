@@ -27,10 +27,10 @@ Sass mixins & functions library!
 
 ## Variables
 
-| Variables     | Default   | Mixins dependencies    |
-| ------------- | --------- | ---------------------- |
-| $oldie        | ``false`` | All mixins config with |
-| $media-query  | ``true``  | breakpoint             |
+| Variables        | Default   | Mixins dependencies    |
+| ---------------- | --------- | ---------------------- |
+| ``$oldie``       | ``false`` | All mixins config with |
+| ``$media-query`` | ``true``  | breakpoint             |
 
 ### $oldie
 
