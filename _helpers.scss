@@ -1,0 +1,100 @@
+// =============================================================== //
+//                       CSS HELPERS LIBRARY                       //
+// =============================================================== //
+
+// ------------------------------------------- //
+// POSITION CLASS
+// ------------------------------------------- //
+
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.center {
+    margin: 0 auto;
+}
+
+// ------------------------------------------- //
+// CLEARFIX CLASS
+// ------------------------------------------- //
+
+.clearfix {
+    &:before,
+    &:after {
+        content: " ";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+    @if $oldie {
+        *zoom: 1;
+    }
+}
+.clear {
+    clear: both;
+}
+.clearfix-reset {
+    &:before,
+    &:after {
+        content: "";
+        display: inline;
+    }
+    &:after {
+        clear: none;
+    }
+    @if $oldie {
+        *zoom: normal;
+    }
+}
+.clear-reset {
+    clear: none;
+}
+
+// ------------------------------------------- //
+// TEXT-OVERFLOW
+// ------------------------------------------- //
+
+%ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+// ------------------------------------------- //
+// TEXT-HYPHENS
+// ------------------------------------------- //
+
+%hyphens {
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -o-hyphens: auto;
+    hyphens: auto;
+}
+
+// ------------------------------------------- //
+// HIDDEN CLASS
+// ------------------------------------------- //
+
+.hidden {
+    display: none;
+}
+.hidden-mobile {
+    @extend .hidden;
+    @include breakpoint($medium) {
+        display: block;
+    }
+}
+.hidden-tablet {
+    @include breakpoint($medium, $large) {
+        display: none;
+    }
+}
+.hidden-desktop {
+    @include breakpoint($large) {
+        display: none;
+    }
+}
