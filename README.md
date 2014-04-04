@@ -2,13 +2,6 @@
 
 Sass mixins & functions library!
 
-## Credits
-
-Projects inspirations and forking:
-
-* [Nicolas Gallagher (Normalize.css)](http://necolas.github.io/normalize.css/)
-* [Hinerangi Courtenay (Skymaiden)](https://github.com/skymaiden)
-
 ## Functions
 
 | Functions | Versions |
@@ -83,6 +76,13 @@ The ``_helpers.scss`` depends on the ``_mercury.scss`` file because some helpers
 ## Normalize.css
 
 The ``_normalize.scss`` file is completely independent and does not require any functions or mixins the main library. It can be used independently or simply not used!
+
+## Credits
+
+Projects inspirations and forking:
+
+* [Nicolas Gallagher (Normalize.css)](http://necolas.github.io/normalize.css/)
+* [Hinerangi Courtenay (Skymaiden)](https://github.com/skymaiden)
 
 # Changelog
 
