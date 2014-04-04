@@ -1,0 +1,25 @@
+// ============================================================================================= //
+// Mixin: box-sizing
+//
+// Version: 1.3.0
+// Description: add "box-sizing" to element
+//
+// PARAMETERS:
+//
+//      $boxSize: "content-box" or "border-box"
+//      $prefix: boolean (false by default)
+//
+// ============================================================================================= //
+
+@mixin box-sizing($boxSize, $prefix: false) {
+
+    box-sizing: $boxSize;
+
+    @if $oldie == false {
+        @if $prefix {
+            @each $prefix in -moz- {
+                #{$prefix}box-sizing: $boxSize;
+            }
+        }
+    }
+}

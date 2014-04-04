@@ -1,0 +1,22 @@
+// ============================================================================================= //
+// Mixin: opacity
+//
+// Version: 1.1.0
+// Description:
+// Compatibility: IE 7+, Firefox 4+, Chrome 1+, Safari 5+, Opera 15+
+//
+// PARAMETERS:
+//
+//      $alpha: number alpha between 0 and 1
+//
+// ============================================================================================= //
+
+@mixin opacity($alpha) {
+    $alpha-ie: $alpha * 100;
+
+    @if $oldie {
+        filter: alpha(opacity=#{$alpha-ie});
+    } @else {
+        opacity: $alpha;
+    }
+}

@@ -1,0 +1,24 @@
+// ============================================================================================= //
+// Mixin: clearfix
+//
+// Version: 1.0.4
+// Description: clearfix with possibility to reset
+//
+// PARAMETERS:
+//
+//      $clearfix: boolean (true by default)
+//
+// DEPENDENCIES:
+//
+//      Helpers: _helpers.scss
+//
+// ============================================================================================= //
+
+@mixin clearfix($clearfix: true) {
+
+    @if $clearfix {
+        @extend .clearfix;
+    } @else {
+        @extend .clearfix-reset;
+    }
+}

@@ -1,0 +1,27 @@
+// ============================================================================================= //
+// Mixin: placeholder
+//
+// Version: 1.0.0
+// Description: make different colors for the input/textarea placeholder
+// Compatibility: IE 10+, Firefox 4+, Chrome 1+, Safari 5+, Opera 15+
+//
+// PARAMETERS:
+//
+//      $color: color in HEX or RGBa
+//
+// ============================================================================================= //
+
+@mixin placeholder($color) {
+    &::-webkit-input-placeholder {
+        color: $color;
+    }
+    &:-moz-placeholder { // Firefox 18-
+        color: $color;
+    }
+    &::-moz-placeholder { // Firefox 19+
+        color: $color;
+    }
+    &:-ms-input-placeholder {
+        color: $color;
+    }
+}

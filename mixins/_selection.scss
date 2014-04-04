@@ -1,0 +1,34 @@
+// ============================================================================================= //
+// Mixin: selection
+//
+// Version: 1.3.0
+// Description: change the mouse selection style
+//
+// PARAMETERS:
+//
+//      $background: background color in HEX or RGBa
+//      $color: font color in HEX or RGBa
+//      $prefix: boolean (false by default)
+//
+// ============================================================================================= //
+
+@mixin selection($background, $color, $prefix: false) {
+
+    ::selection {
+        background: $background;
+        color: $color;
+        text-shadow: none;
+    }
+
+    @if $oldie == false {
+        @if $prefix {
+            @each $prefix in -moz- {
+                ::#{$prefix}selection {
+                    background: $background;
+                    color: $color;
+                    text-shadow: none;
+                }
+            }
+        }
+    }
+}

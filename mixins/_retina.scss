@@ -1,0 +1,31 @@
+// ============================================================================================= //
+// Mixin: retina
+//
+// Version: 1.0.0
+// Description: make HD images for HD mobiles screens
+//
+// PARAMETERS:
+//
+//      $file: file name, without extension
+//      $type file extension ("png" by default)
+//
+// DEPENDENCIES:
+//
+//      Mixin: _breakpoint.scss
+//
+// ============================================================================================= //
+
+@mixin retina($file: false, $type: "png") {
+    $image: #{$file + "." + $type};
+    $image2x: #{$file + "_2x." + $type};
+
+    @if $media-queries {
+        @media only screen and (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+            @if $file {
+                background-image: image-url($image2x);
+                background-size: image-width($image) image-height($image);
+            }
+            @content;
+        }
+    }
+}

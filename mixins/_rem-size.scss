@@ -1,0 +1,23 @@
+// ============================================================================================= //
+// Mixin: rem-size
+//
+// Version: 1.2.1
+// Description: add "font-size" in REM for all recent browsers and in PX for IE7/8
+//
+// PARAMETERS:
+//
+//      $size: size number
+//
+// DEPENDENCIES:
+//
+//      Function: _rem.scss
+//
+// ============================================================================================= //
+
+@mixin rem-size($size) {
+    @if $oldie {
+        font-size: $size * 1px;
+    } @else {
+        font-size: rem($size);
+    }
+}

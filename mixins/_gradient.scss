@@ -1,0 +1,47 @@
+// ============================================================================================= //
+// Mixin: gradient
+//
+// Version: 1.6.0
+// Description: create simple linear gradient
+//
+// PARAMETERS:
+//
+//      $angle: gradient orientation, "vertical" or "horizontal"
+//      $startColor: starting color in HEX or RGBa
+//      $endColor: ending color in HEX or RGBa
+//      $startLocation: starting percentage (0% by default)
+//      $endLocation: ending percentage (100% by default)
+//      $prefix: boolean (false by default)
+//      $ieFilter: boolean (false by default), using for IE7+. Important for IE9!
+//
+// ============================================================================================= //
+
+@mixin gradient($angle, $startColor, $endColor, $startLocation: 0%, $endLocation: 100%, $prefix: false, $ieFilter: false) {
+    $gradient: linear;
+    $angleOld: null;
+    $angleNorm: null;
+    $ieType: null;
+
+    @if $angle == "vertical"{
+        $angleOld: top;
+        $angleNorm: to bottom;
+        $ieType: 0;
+    } @else if $angle == "horizontal"{
+        $angleOld: left;
+        $angleNorm: to right;
+        $ieType: 1;
+    }
+
+    @if $oldie == false {
+        background: #{$gradient}-gradient($angleNorm, $startColor $startLocation, $endColor $endLocation);
+        @if $prefix {
+            @each $prefix in -moz-, -webkit-, -o- {
+                background: #{$prefix}#{$gradient}-gradient($angleOld, $startColor $startLocation, $endColor $endLocation);
+            }
+        }
+    }
+
+    @if $ieFilter {
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$startColor}', endColorstr='#{$endColor}', GradientType=#{$ieType});
+    }
+}
