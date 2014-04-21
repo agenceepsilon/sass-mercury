@@ -27,10 +27,10 @@ Sass mixins & functions library!
 
 ## Variables
 
-| Variables        | Default   | Mixins dependencies    |
-| ---------------- | --------- | ---------------------- |
-| ``$oldie``       | ``false`` | All mixins config with |
-| ``$media-query`` | ``true``  | breakpoint             |
+| Variables        | Default   | Mixins dependencies        |
+| ---------------- | --------- | -------------------------- |
+| ``$oldie``       | ``false`` | All mixins config use this |
+| ``$media-query`` | ``true``  | breakpoint                 |
 
 ### $oldie
 
@@ -84,8 +84,8 @@ Projects inspirations and forking:
 * [Nicolas Gallagher (Normalize.css)](http://necolas.github.io/normalize.css/)
 * [Hinerangi Courtenay (Skymaiden)](https://github.com/skymaiden)
 
-# Changelog
+## Changelog
 
-## 1.0.0
+### 1.0.0
 
 * Initial release
