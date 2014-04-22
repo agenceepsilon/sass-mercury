@@ -1,7 +1,7 @@
 // ============================================================================================= //
 // Mixin: clearfix
 //
-// Version: 1.0.4
+// Version: 1.0.5
 // Description: clearfix with possibility to reset
 //
 // PARAMETERS:
@@ -19,6 +19,6 @@
     @if $clearfix {
         @extend .clearfix;
     } @else {
-        @extend .clearfix-reset;
+        @extend .clearfix--reset;
     }
 }

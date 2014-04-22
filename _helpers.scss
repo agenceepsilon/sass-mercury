@@ -36,7 +36,7 @@
 .clear {
     clear: both;
 }
-.clearfix-reset {
+.clearfix--reset {
     &:before,
     &:after {
         content: "";
@@ -49,7 +49,7 @@
         *zoom: normal;
     }
 }
-.clear-reset {
+.clear--reset {
     clear: none;
 }
 
@@ -81,20 +81,24 @@
 
 .hidden {
     display: none;
+    visibility: hidden;
 }
-.hidden-mobile {
+.hidden--mobile {
     @extend .hidden;
     @include breakpoint($medium) {
         display: block;
+        visibility: visible;
     }
 }
-.hidden-tablet {
+.hidden--tablet {
     @include breakpoint($medium, $large) {
         display: none;
+        visibility: hidden;
     }
 }
-.hidden-desktop {
+.hidden--desktop {
     @include breakpoint($large) {
         display: none;
+        visibility: hidden;
     }
 }
