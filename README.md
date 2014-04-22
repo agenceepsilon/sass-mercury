@@ -86,6 +86,14 @@ Projects inspirations and forking:
 
 ## Changelog
 
+### 1.0.1
+
+* Mixin:
+    * ``clearfix();`` 1.0.5
+        * BEM class fix
+* Helpers:
+    * BEM class fix
+
 ### 1.0.0
 
 * Initial release
