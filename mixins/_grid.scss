@@ -5,15 +5,13 @@
 // Description: generate your grid
 // Compatibility: IE 7+, Firefox 5+, Chrome 20+, Safari 5+, Opera 10+
 //
-// PARAMETERS:
+// Parameters:
+//  - $column: number of columns
+//  - $prefix: boolean
+//  - $cssBase: boolean
 //
-//      - $column: number of columns
-//      - $prefix: boolean
-//      - $cssBase: boolean
-//
-// DEPENDENCIES:
-//
-//      Mixin: _breakpoint.scss
+// Dependencies:
+//  - Mixin: _breakpoint.scss
 //
 // ============================================================================================= //
 
