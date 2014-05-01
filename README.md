@@ -22,7 +22,7 @@ Sass mixins & functions library!
 | opacity     | 1.1.0    | None                   | No                        |
 | placeholder | 1.0.0    | None                   | No                        |
 | rem-size    | 1.2.1    | **rem**                | No                        |
-| retina      | 1.0.0    | **breakpoint**         | No                        |
+| retina      | 1.1.0    | None                   | No                        |
 | selection   | 1.3.0    | None                   | No                        |
 
 ## Variables
@@ -85,6 +85,13 @@ Projects inspirations and forking:
 * [Hinerangi Courtenay (Skymaiden)](https://github.com/skymaiden)
 
 ## Changelog
+
+### 1.1.0
+
+* Mixin:
+    * ``retina();`` 1.1.0
+        * Add ``postfix`` option
+        * Variables new names
 
 ### 1.0.1
 

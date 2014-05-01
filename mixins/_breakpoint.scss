@@ -4,14 +4,20 @@
 // Version: 2.0.0
 // Description: make your content responsive !
 //
+// Sizes:
+//  - $small: 480px -> Mobile
+//  - $medium: 768px -> Tablet
+//  - $large: 960px -> Desktop
+//  - $wide: 1200px -> More...
+//
 // ============================================================================================= //
 
 $media-queries: true !default;
 
-$small:  480px !default;  // Mobile
-$medium: 768px !default;  // Tablet
-$large:  960px !default;  // Desktop
-$wide:   1200px !default; // More...
+$small: 480px !default;
+$medium: 768px !default;
+$large: 960px !default;
+$wide: 1200px !default;
 
 $max-desktop: $large !default;
 
