@@ -1,31 +1,28 @@
 // ============================================================================================= //
 // Mixin: retina
 //
-// Version: 1.0.0
+// Version: 1.1.0
 // Description: make HD images for HD mobiles screens
 //
-// PARAMETERS:
+// Parameters:
+//  - $image: file name, without extension
+//  - $extension: file extension ("png" by default)
+//  - $postfix: postfix for HD images reference ("_2x" by defaut)
 //
-//      $file: file name, without extension
-//      $type file extension ("png" by default)
-//
-// DEPENDENCIES:
-//
-//      Mixin: _breakpoint.scss
+// Inspired by:
+//  - https://github.com/kaelig/hidpi
 //
 // ============================================================================================= //
 
-@mixin retina($file: false, $type: "png") {
-    $image: #{$file + "." + $type};
-    $image2x: #{$file + "_2x." + $type};
+@mixin retina($image: false, $extension: png, $postfix: _2x) {
+    $image-name: "#{$image}.#{$extension}";
+    $image-hd-name: "#{$image}#{$postfix}.#{$extension}";
 
-    @if $media-queries {
-        @media only screen and (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
-            @if $file {
-                background-image: image-url($image2x);
-                background-size: image-width($image) image-height($image);
-            }
-            @content;
+    @media(-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+        @if $image {
+            background-image: image-url($image-hd-name);
+            background-size: image-width($image-name) image-height($image-name);
         }
+        @content;
     }
 }
