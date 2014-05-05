@@ -1,7 +1,7 @@
 // ============================================================================================= //
 // Mixin: gradient
 //
-// Version: 1.6.0
+// Version: 1.6.1
 // Description: create simple linear gradient
 //
 // Parameters:
@@ -21,22 +21,20 @@
     $angleNorm: null;
     $ieType: null;
 
-    @if $angle == "vertical"{
+    @if $angle == "vertical" {
         $angleOld: top;
         $angleNorm: to bottom;
         $ieType: 0;
-    } @else if $angle == "horizontal"{
+    } @else if $angle == "horizontal" {
         $angleOld: left;
         $angleNorm: to right;
         $ieType: 1;
     }
 
-    @if $oldie == false {
-        background: #{$gradient}-gradient($angleNorm, $startColor $startLocation, $endColor $endLocation);
-        @if $prefix {
-            @each $prefix in -moz-, -webkit-, -o- {
-                background: #{$prefix}#{$gradient}-gradient($angleOld, $startColor $startLocation, $endColor $endLocation);
-            }
+    background: #{$gradient}-gradient($angleNorm, $startColor $startLocation, $endColor $endLocation);
+    @if $prefix {
+        @each $prefix in -moz-, -webkit-, -o- {
+            background: #{$prefix}#{$gradient}-gradient($angleOld, $startColor $startLocation, $endColor $endLocation);
         }
     }
 

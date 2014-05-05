@@ -1,7 +1,7 @@
 // ============================================================================================= //
 // Mixin: selection
 //
-// Version: 1.3.0
+// Version: 1.3.1
 // Description: change the mouse selection style
 //
 // Parameters:
@@ -19,14 +19,12 @@
         text-shadow: none;
     }
 
-    @if $oldie == false {
-        @if $prefix {
-            @each $prefix in -moz- {
-                ::#{$prefix}selection {
-                    background: $background;
-                    color: $color;
-                    text-shadow: none;
-                }
+    @if $prefix {
+        @each $prefix in -moz- {
+            ::#{$prefix}selection {
+                background: $background;
+                color: $color;
+                text-shadow: none;
             }
         }
     }

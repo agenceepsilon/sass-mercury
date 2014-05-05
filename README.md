@@ -13,17 +13,17 @@ Sass mixins & functions library!
 
 | Mixins      | Versions | Functions dependencies | helpers.scss dependencies |
 | ----------- | -------- | ---------------------- | ------------------------- |
-| box-sixing  | 1.3.0    | None                   | No                        |
+| box-sixing  | 1.3.1    | None                   | No                        |
 | breakpoint  | 2.0.0    | None                   | No                        |
 | clearfix    | 1.0.5    | None                   | **Yes**                   |
 | font-face   | 1.0.0    | None                   | No                        |
-| gradient    | 1.6.0    | None                   | No                        |
+| gradient    | 1.6.1    | None                   | No                        |
 | grid        | 1.0.0    | **breakpoint**         | No                        |
 | opacity     | 1.1.0    | None                   | No                        |
 | placeholder | 1.0.0    | None                   | No                        |
 | rem-size    | 1.2.1    | **rem**                | No                        |
 | retina      | 1.1.0    | None                   | No                        |
-| selection   | 1.3.0    | None                   | No                        |
+| selection   | 1.3.1    | None                   | No                        |
 
 ## Variables
 
@@ -88,10 +88,16 @@ Projects inspirations and forking:
 
 ### 1.1.0
 
-* Mixin:
+* Mixins:
+    * ``box-sizing();`` 1.3.1
+        * Delete ``$oldie``
+    * ``gradient();`` 1.6.1
+            * Delete ``$oldie``
     * ``retina();`` 1.1.0
-        * Add ``postfix`` option
-        * Variables new names
+            * Add ``postfix`` option
+            * Variables new names
+    * ``selection();`` 1.3.1
+            * Delete ``$oldie``
 
 ### 1.0.1
 
