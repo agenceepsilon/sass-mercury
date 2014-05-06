@@ -97,7 +97,6 @@ Projects inspirations and forking:
             * Variables new names
     * ``selection();`` 1.3.1
             * Delete ``$oldie``
-
 * Mixin deleted:
     * ``clearfix();``
 
