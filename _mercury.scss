@@ -1,7 +1,7 @@
 // ============================================================================================= //
 // Project: Mercury
 //
-// Version: 1.0.1
+// Version: 1.1.0.beta2
 //
 // Author: Boris DAMEVIN
 // GitHub: https://github.com/agenceepsilon/sass-mercury
@@ -27,7 +27,6 @@ $oldie: false !default;
 
 @import "mixins/_box-sizing";
 @import "mixins/_breakpoint";
-@import "mixins/_clearfix";
 @import "mixins/_font-face";
 @import "mixins/_gradient";
 @import "mixins/_grid";

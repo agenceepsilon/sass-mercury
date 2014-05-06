@@ -15,7 +15,6 @@ Sass mixins & functions library!
 | ----------- | -------- | ---------------------- | ------------------------- |
 | box-sixing  | 1.3.1    | None                   | No                        |
 | breakpoint  | 2.0.0    | None                   | No                        |
-| clearfix    | 1.0.5    | None                   | **Yes**                   |
 | font-face   | 1.0.0    | None                   | No                        |
 | gradient    | 1.6.1    | None                   | No                        |
 | grid        | 1.0.0    | **breakpoint**         | No                        |
@@ -88,7 +87,7 @@ Projects inspirations and forking:
 
 ### 1.1.0
 
-* Mixins:
+* Mixins updated:
     * ``box-sizing();`` 1.3.1
         * Delete ``$oldie``
     * ``gradient();`` 1.6.1
@@ -99,9 +98,12 @@ Projects inspirations and forking:
     * ``selection();`` 1.3.1
             * Delete ``$oldie``
 
+* Mixin deleted:
+    * ``clearfix();``
+
 ### 1.0.1
 
-* Mixin:
+* Mixin updated:
     * ``clearfix();`` 1.0.5
         * BEM class fix
 * Helpers:
