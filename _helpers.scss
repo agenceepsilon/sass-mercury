@@ -83,9 +83,10 @@
     display: none;
     visibility: hidden;
     &--mobile {
+        @extend .hidden;
         @include breakpoint($max-width: $medium) {
-            display: none;
-            visibility: hidden;
+            display: block;
+            visibility: visible;
         }
     }
     &--tablet {
