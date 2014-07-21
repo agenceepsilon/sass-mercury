@@ -32,25 +32,25 @@
     @if $oldie {
         *zoom: 1;
     }
+    &--reset {
+        &:before,
+        &:after {
+            content: "";
+            display: inline;
+        }
+        &:after {
+            clear: none;
+        }
+        @if $oldie {
+            *zoom: normal;
+        }
+    }
 }
 .clear {
     clear: both;
-}
-.clearfix--reset {
-    &:before,
-    &:after {
-        content: "";
-        display: inline;
-    }
-    &:after {
+    &--reset {
         clear: none;
     }
-    @if $oldie {
-        *zoom: normal;
-    }
-}
-.clear--reset {
-    clear: none;
 }
 
 // ------------------------------------------- //
@@ -82,23 +82,32 @@
 .hidden {
     display: none;
     visibility: hidden;
-}
-.hidden--mobile {
-    @extend .hidden;
-    @include breakpoint($medium) {
+    &--mobile {
+        display: none;
+        visibility: hidden;
+        @include breakpoint($medium) {
+            display: block;
+            visibility: visible;
+        }
+    }
+    &--tablet {
         display: block;
         visibility: visible;
+        @include breakpoint($medium, $large) {
+            display: none;
+            visibility: hidden;
+        }
+        @include breakpoint($large) {
+            display: block;
+            visibility: visible;
+        }
     }
-}
-.hidden--tablet {
-    @include breakpoint($medium, $large) {
-        display: none;
-        visibility: hidden;
-    }
-}
-.hidden--desktop {
-    @include breakpoint($large) {
-        display: none;
-        visibility: hidden;
+    &--desktop {
+        display: block;
+        visibility: visible;
+        @include breakpoint($large) {
+            display: none;
+            visibility: hidden;
+        }
     }
 }
