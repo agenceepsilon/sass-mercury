@@ -90,7 +90,7 @@
         }
     }
     &--tablet {
-        @include breakpoint($medium, $large) {
+        @include breakpoint($medium, $large - 1) {
             display: none;
             visibility: hidden;
         }
