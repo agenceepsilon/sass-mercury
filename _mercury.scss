@@ -25,13 +25,11 @@ $oldie: false !default;
 //                              MIXINS                             //
 // --------------------------------------------------------------- //
 
-@import "mixins/_box-sizing";
 @import "mixins/_breakpoint";
 @import "mixins/_font-face";
 @import "mixins/_gradient";
 @import "mixins/_grid";
 @import "mixins/_opacity";
-@import "mixins/_placeholder";
 @import "mixins/_rem-size";
 @import "mixins/_retina";
 @import "mixins/_selection";
