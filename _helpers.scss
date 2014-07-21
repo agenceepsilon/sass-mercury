@@ -32,25 +32,25 @@
     @if $oldie {
         *zoom: 1;
     }
+    &--reset {
+        &:before,
+        &:after {
+            content: "";
+            display: inline;
+        }
+        &:after {
+            clear: none;
+        }
+        @if $oldie {
+            *zoom: normal;
+        }
+    }
 }
 .clear {
     clear: both;
-}
-.clearfix--reset {
-    &:before,
-    &:after {
-        content: "";
-        display: inline;
-    }
-    &:after {
+    &--reset {
         clear: none;
     }
-    @if $oldie {
-        *zoom: normal;
-    }
-}
-.clear--reset {
-    clear: none;
 }
 
 // ------------------------------------------- //
