@@ -84,7 +84,7 @@
     visibility: hidden;
     &--mobile {
         @extend .hidden;
-        @include breakpoint($max-width: $medium) {
+        @include breakpoint($medium) {
             display: block;
             visibility: visible;
         }
