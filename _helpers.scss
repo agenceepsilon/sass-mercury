@@ -83,19 +83,26 @@
     display: none;
     visibility: hidden;
     &--mobile {
-        @extend .hidden;
         @include breakpoint($medium) {
             display: block;
             visibility: visible;
         }
     }
     &--tablet {
-        @include breakpoint($medium, $large - 1) {
+        display: block;
+        visibility: visible;
+        @include breakpoint($medium, $large) {
             display: none;
             visibility: hidden;
         }
+        @include breakpoint($large){
+            display: block;
+            visibility: visible;
+        }
     }
     &--desktop {
+        display: block;
+        visibility: visible;
         @include breakpoint($large) {
             display: none;
             visibility: hidden;
