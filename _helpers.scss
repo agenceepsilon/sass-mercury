@@ -84,21 +84,21 @@
     visibility: hidden;
 }
 .hidden--mobile {
-    @extend .hidden;
+//    @extend .hidden;
     @include breakpoint($medium) {
         display: block;
         visibility: visible;
     }
 }
-.hidden--tablet {
-    @include breakpoint($medium, $large) {
-        display: none;
-        visibility: hidden;
-    }
-}
-.hidden--desktop {
-    @include breakpoint($large) {
-        display: none;
-        visibility: hidden;
-    }
-}
+//.hidden--tablet {
+//    @include breakpoint($medium, $large) {
+//        display: none;
+//        visibility: hidden;
+//    }
+//}
+//.hidden--desktop {
+//    @include breakpoint($large) {
+//        display: none;
+//        visibility: hidden;
+//    }
+//}
