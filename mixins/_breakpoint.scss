@@ -54,6 +54,9 @@ $wide: 1200px !default;
 // ---------------------------------------------------------- //
 $max-desktop: $large !default;
 
+// ---------------------------------------------------------- //
+// Mixin BreakPoint
+// ---------------------------------------------------------- //
 @mixin breakpoint($min-width: false, $max-width: false, $prefix: false) {
     @if $media-queries {
         @if $min-width {
