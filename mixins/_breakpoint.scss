@@ -6,28 +6,31 @@
 //
 // Parameters:
 //  - $very-small: 320px -> iPhone
-//  - $small: 480px -> Mobile
+//  - $small: 480px  -> Mobile
 //  - $medium: 768px -> Tablet
-//  - $large: 960px -> Desktop
-//  - $wide: 1200px -> More...
+//  - $large: 960px  -> Desktop
+//  - $wide: 1200px  -> More...
 //
 // ============================================================================================= //
 
 // -------------------------------------------- //
 // Enable support for media queries by default.
 // -------------------------------------------- //
+
 $media-queries: true !default;
 
 // ---------------------------------------------------- //
 // For mobile screens in portrait mode from 320px wide.
 // Size reference: iPhone in portrait mode.
 // ---------------------------------------------------- //
+
 $very-small: 320px !default;
 
 // ----------------------------------------------------- //
 // For mobile screens in landscape mode from 480px wide.
 // Size reference: iPhone in landscape mode.
 // ----------------------------------------------------- //
+
 $small: 480px !default;
 
 // ------------------------------------------------------------ //
@@ -37,26 +40,31 @@ $small: 480px !default;
 // For tablets in landscape mode, the "large" value is applied,
 // because the screenshave the width of the desktop screens.
 // ------------------------------------------------------------ //
+
 $medium: 768px !default;
 
 // ------------------------------------------- //
 // For desktop screens from 960px wide.
 // ------------------------------------------- //
+
 $large: 960px !default;
 
 // ------------------------------------------- //
 // For large desktop screens from 1200px wide.
 // ------------------------------------------- //
+
 $wide: 1200px !default;
 
 // ---------------------------------------------------------- //
 // Maximum width for displaying browsers are not responsives.
 // ---------------------------------------------------------- //
+
 $max-desktop: $large !default;
 
 // ---------------------------------------------------------- //
 // Mixin BreakPoint
 // ---------------------------------------------------------- //
+
 @mixin breakpoint($min-width: false, $max-width: false, $prefix: false) {
     @if $media-queries {
         @if $min-width {
