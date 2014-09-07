@@ -85,6 +85,10 @@ Projects inspirations and forking:
 
 ## Changelog
 
+### 1.1.1
+
+* Comments update
+
 ### 1.1.0
 
 * Mixins updated:
