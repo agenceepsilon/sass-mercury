@@ -14,15 +14,12 @@
 //
 // ============================================================================================= //
 
-@mixin retina($image: false, $extension: png, $postfix: _2x) {
+@mixin retina($image, $extension: png, $postfix: _2x) {
     $image-name: "#{$image}.#{$extension}";
     $image-hd-name: "#{$image}#{$postfix}.#{$extension}";
 
     @media(-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
-        @if $image {
-            background-image: image-url($image-hd-name);
-            background-size: image-width($image-name) image-height($image-name);
-        }
-        @content;
+        background-image: image-url($image-hd-name);
+        background-size: image-width($image-name) image-height($image-name);
     }
 }
