@@ -20,15 +20,12 @@
 //
 // ============================================================================================= //
 
-@mixin retina-legacy($image: false, $width: false, $height: false, $extension: png, $postfix: _2x) {
+@mixin retina-legacy($image, $width, $height, $extension: png, $postfix: _2x) {
     $image-name: "#{$image}.#{$extension}";
     $image-hd-name: "#{$image}#{$postfix}.#{$extension}";
 
     @media(-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
-        @if $image {
-            background-image: url($image-hd-name);
-            background-size: #{$width * 1px} #{$height * 1px};
-        }
-        @content;
+        background-image: url($image-hd-name);
+        background-size: #{$width * 1px} #{$height * 1px};
     }
 }
