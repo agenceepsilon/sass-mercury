@@ -85,6 +85,20 @@ Projects inspirations and forking:
 
 ## Changelog
 
+### Next release - 2.0.0-beta.7
+
+* Sass 3.3.0 minimal request [#7](https://github.com/agenceepsilon/sass-mercury/issues/7)
+* Mixins:
+    * Version tag deleted
+    * ``placeholder();`` deleted [#4](https://github.com/agenceepsilon/sass-mercury/issues/4)
+    * ``box-sizing();`` deleted [#3](https://github.com/agenceepsilon/sass-mercury/issues/3)
+    * ``breakpoint();``:
+        * Adding iPhone width [#8](https://github.com/agenceepsilon/sass-mercury/issues/8)
+    * ``retina-legacy();``: [#10](https://github.com/agenceepsilon/sass-mercury/issues/10)
+        * Mixin dedicated to generating high definitions pictures for those who do not use the library to generate the Compass Sass.
+* Helpers:
+    * ``hidden`` class update [#6](https://github.com/agenceepsilon/sass-mercury/issues/6)
+
 ### 1.1.1
 
 * Comments update
