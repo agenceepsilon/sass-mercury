@@ -1,10 +1,10 @@
-// ============================================================================================= //
+// =============================================================================================== //
 //
-// Warning: Use this mixin that if you do not use Compass to generate Sass files !!!
+// WARNING: Use this mixin that if you use another library that Compass, like LibSass for example,
+//          to generate Sass files !!!
 //
 // Mixin: retina legacy
 //
-// Version: 1.0.0
 // Description: make HD images for HD mobiles screens
 //
 // Parameters:
@@ -18,7 +18,7 @@
 //  - https://github.com/kaelig/hidpi
 //  - https://signalvnoise.com/posts/3271-easy-retina-ready-images-using-scss
 //
-// ============================================================================================= //
+// =============================================================================================== //
 
 @mixin retina-legacy($image, $width, $height, $extension: png, $postfix: _2x) {
     $image-name: "#{$image}.#{$extension}";
