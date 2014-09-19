@@ -72,6 +72,15 @@ The main use is for Intenet Explorer 7 and 8. It takes place in the false option
 
 The ``_helpers.scss`` depends on the ``_mercury.scss`` file because some helpers use variables or mixins.
 
+### Hidden class
+
+| Hide...             | Class                |
+| ------------------- | -------------------- |
+| ...for all          | ``.hidden``          |
+| ...for mobile only  | ``.hidden--mobile``  |
+| ...for tablet only  | ``.hidden--tablet``  |
+| ...for desktop only | ``.hidden--desktop`` |
+
 ## Normalize.css
 
 The ``_normalize.scss`` file is completely independent and does not require any functions or mixins the main library. It can be used independently or simply not used!
