@@ -11,18 +11,19 @@ Sass mixins & functions library!
 
 ## Mixins
 
-| Mixins      | Versions | Functions dependencies | helpers.scss dependencies |
-| ----------- | -------- | ---------------------- | ------------------------- |
-| box-sixing  | 1.3.1    | None                   | No                        |
-| breakpoint  | 2.0.0    | None                   | No                        |
-| font-face   | 1.0.0    | None                   | No                        |
-| gradient    | 1.6.1    | None                   | No                        |
-| grid        | 1.0.0    | **breakpoint**         | No                        |
-| opacity     | 1.1.0    | None                   | No                        |
-| placeholder | 1.0.0    | None                   | No                        |
-| rem-size    | 1.2.1    | **rem**                | No                        |
-| retina      | 1.1.0    | None                   | No                        |
-| selection   | 1.3.1    | None                   | No                        |
+| Mixins        | Functions dependencies | helpers.scss dependencies |
+| ------------- | ---------------------- | ------------------------- |
+| box-sixing    | None                   | No                        |
+| breakpoint    | None                   | No                        |
+| font-face     | None                   | No                        |
+| gradient      | None                   | No                        |
+| grid          | **breakpoint**         | No                        |
+| opacity       | None                   | No                        |
+| placeholder   | None                   | No                        |
+| rem-size      | **rem**                | No                        |
+| retina        | None                   | No                        |
+| retina-legacy | None                   | No                        |
+| selection     | None                   | No                        |
 
 ## Variables
 
@@ -81,7 +82,7 @@ The ``_helpers.scss`` depends on the ``_mercury.scss`` file because some helpers
 | ...for tablet only  | ``.hidden--tablet``  |
 | ...for desktop only | ``.hidden--desktop`` |
 
-If you want to hide multiple resolution but kept others add more classes to the same block.
+If you want to hide several resolutions but keep other, add more classes to the same element.
 
 For example: if you want hide mobile and desktop, just put the classes on the element :
 
@@ -102,17 +103,17 @@ Projects inspirations and forking:
 
 ### Next release - 2.0.0-rc.1
 
-* Sass 3.3.0 minimal request [#7](https://github.com/agenceepsilon/sass-mercury/issues/7)
+* Sass 3.3.0 minimal request ([#7](https://github.com/agenceepsilon/sass-mercury/issues/7))
 * Mixins:
     * Version tag deleted
-    * ``placeholder();`` deleted [#4](https://github.com/agenceepsilon/sass-mercury/issues/4)
-    * ``box-sizing();`` deleted [#3](https://github.com/agenceepsilon/sass-mercury/issues/3)
+    * ``placeholder();`` deleted ([#4](https://github.com/agenceepsilon/sass-mercury/issues/4))
+    * ``box-sizing();`` deleted ([#3](https://github.com/agenceepsilon/sass-mercury/issues/3))
     * ``breakpoint();``:
-        * Adding iPhone width [#8](https://github.com/agenceepsilon/sass-mercury/issues/8)
-    * ``retina-legacy();``: [#10](https://github.com/agenceepsilon/sass-mercury/issues/10)
+        * Adding iPhone width ([#8](https://github.com/agenceepsilon/sass-mercury/issues/8))
+    * ``retina-legacy();``: ([#10](https://github.com/agenceepsilon/sass-mercury/issues/10))
         * Mixin dedicated to generating high definitions pictures for those who do not use the library to generate the Compass Sass.
 * Helpers:
-    * ``hidden`` class update [#6](https://github.com/agenceepsilon/sass-mercury/issues/6)
+    * ``hidden`` class update ([#6](https://github.com/agenceepsilon/sass-mercury/issues/6))
 
 ### 1.1.1
 
