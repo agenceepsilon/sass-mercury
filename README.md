@@ -81,6 +81,12 @@ The ``_helpers.scss`` depends on the ``_mercury.scss`` file because some helpers
 | ...for tablet only  | ``.hidden--tablet``  |
 | ...for desktop only | ``.hidden--desktop`` |
 
+If you want to hide multiple resolution but kept others add more classes to the same block.
+
+For example: if you want hide mobile and desktop, just put the classes on the element :
+
+    <div class="hidden--mobile hidden--desktop">My div</div>
+
 ## Normalize.css
 
 The ``_normalize.scss`` file is completely independent and does not require any functions or mixins the main library. It can be used independently or simply not used!
@@ -94,7 +100,7 @@ Projects inspirations and forking:
 
 ## Changelog
 
-### Next release - 2.0.0-beta.7
+### Next release - 2.0.0-rc.1
 
 * Sass 3.3.0 minimal request [#7](https://github.com/agenceepsilon/sass-mercury/issues/7)
 * Mixins:
