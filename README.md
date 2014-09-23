@@ -6,15 +6,15 @@ Sass mixins & functions library!
 
 | Requirements                        | Versions |
 | ----------------------------------- | -------- |
-| [Sass](http://sass-lang.com)        | ~3.3.0   |
-| [Compass](http://compass-style.org) | ~1.0.0   |
+| [Sass](http://sass-lang.com)        | ^3.3.0   |
+| [Compass](http://compass-style.org) | ^1.0.0   |
 
 ## Functions
 
-| Functions | Versions |
-| --------- | -------- |
-| em        | N/A      |
-| rem       | N/A      |
+| Functions |
+| --------- |
+| em        |
+| rem       |
 
 ## Mixins
 
