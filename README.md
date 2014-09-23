@@ -18,19 +18,19 @@ Sass mixins & functions library!
 
 ## Mixins
 
-| Mixins        | Functions dependencies | helpers.scss dependencies |
-| ------------- | ---------------------- | ------------------------- |
-| box-sixing    | None                   | No                        |
-| breakpoint    | None                   | No                        |
-| font-face     | None                   | No                        |
-| gradient      | None                   | No                        |
-| grid          | **breakpoint**         | No                        |
-| opacity       | None                   | No                        |
-| placeholder   | None                   | No                        |
-| rem-size      | **rem**                | No                        |
-| retina        | None                   | No                        |
-| retina-legacy | None                   | No                        |
-| selection     | None                   | No                        |
+| Mixins        | Functions dependencies | helpers.scss dependencies | Compass dependencies |
+| ------------- | ---------------------- | ------------------------- | -------------------- |
+| box-sixing    | None                   | No                        | No                   |
+| breakpoint    | None                   | No                        | No                   |
+| font-face     | None                   | No                        | No                   |
+| gradient      | None                   | No                        | No                   |
+| grid          | **breakpoint**         | No                        | No                   |
+| opacity       | None                   | No                        | No                   |
+| placeholder   | None                   | No                        | No                   |
+| rem-size      | **rem**                | No                        | No                   |
+| retina        | None                   | No                        | **Yes**              |
+| retina-legacy | None                   | No                        | No                   |
+| selection     | None                   | No                        | No                   |
 
 ## Variables
 
