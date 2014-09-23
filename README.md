@@ -2,6 +2,13 @@
 
 Sass mixins & functions library!
 
+## Requirements
+
+| Requirements                        | Versions |
+| ----------------------------------- | -------- |
+| [Sass](http://sass-lang.com)        | ~3.3.0   |
+| [Compass](http://compass-style.org) | ~1.0.0   |
+
 ## Functions
 
 | Functions | Versions |
