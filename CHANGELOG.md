@@ -15,6 +15,7 @@
         * Mixin dedicated to generating high definitions pictures for those who do not use the library to generate the Compass Sass.
 * Helpers:
     * ``hidden`` class update ([#6](https://github.com/agenceepsilon/sass-mercury/issues/6))
+* Normalize ``3.0.2``
 
 ## 1.1.1
 
