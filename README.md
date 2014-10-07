@@ -1,4 +1,4 @@
-# Mercury [![GitHub version](https://badge.fury.io/gh/agenceepsilon%2Fsass-mercury.png)](http://badge.fury.io/gh/agenceepsilon%2Fsass-mercury) [![Bower version](https://badge.fury.io/bo/sass-mercury.png)](http://badge.fury.io/bo/sass-mercury)
+# Mercury [![GitHub version](http://img.shields.io/github/release/agenceepsilon/sass-mercury.svg?style=flat-square)](https://github.com/agenceepsilon/sass-mercury/releases) [![Bower version](http://img.shields.io/bower/v/agenceepsilon/sass-mercury.svg?style=flat-square)](https://github.com/agenceepsilon/sass-mercury/releases)
 
 Sass mixins & functions library!
 
