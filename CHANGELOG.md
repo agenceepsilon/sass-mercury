@@ -9,6 +9,7 @@
     * ``box-sizing();`` deleted ([#3](https://github.com/agenceepsilon/sass-mercury/issues/3))
     * ``breakpoint();``:
         * Adding iPhone width ([#8](https://github.com/agenceepsilon/sass-mercury/issues/8))
+        * Adjust pixel size if we choose two width between ``min-width`` and ``max-width``
     * ``retina();``:
         * Add ``$pixel-ratio`` option, ``1.5`` by default ([#12](https://github.com/agenceepsilon/sass-mercury/issues/12))
     * ``retina-legacy();``: ([#10](https://github.com/agenceepsilon/sass-mercury/issues/10))
