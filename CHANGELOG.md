@@ -1,6 +1,6 @@
 # Changelog
 
-## Next release - 2.0.0-rc.3
+## 2.0.0
 
 * Sass 3.3.0 minimal request ([#7](https://github.com/agenceepsilon/sass-mercury/issues/7))
 * Mixins:
