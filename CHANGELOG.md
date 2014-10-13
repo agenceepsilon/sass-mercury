@@ -5,6 +5,7 @@
 * Mixins
     * ``retina`` rename to ``retina-compass`` ([#13](https://github.com/agenceepsilon/sass-mercury/issues/13))
     * ``retina-legacy`` rename to ``retina`` ([#13](https://github.com/agenceepsilon/sass-mercury/issues/13))
+    * ``breakpoint``: fix prefix class ([#14](https://github.com/agenceepsilon/sass-mercury/issues/14))
 
 ## 2.0.0
 

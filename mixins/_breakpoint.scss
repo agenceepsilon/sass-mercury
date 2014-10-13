@@ -4,11 +4,20 @@
 // Description: make your content responsive !
 //
 // Parameters:
+//  - $min-width: choose the minimum width
+//  - $max-width: choose the maximum width
+//  - $prefix: choose the class to apply before
+//
+// Defaults:
+//  - $media-queries: active or not the mixin, "true" by default
+//  - $max-desktop: maximum width for displaying browsers are not responsives, "large" by default
+//
+// Sizes:
 //  - $very-small: 320px -> iPhone
-//  - $small: 480px  -> Mobile
+//  - $small: 480px -> Mobile
 //  - $medium: 768px -> Tablet
-//  - $large: 960px  -> Desktop
-//  - $wide: 1200px  -> More...
+//  - $large: 960px -> Desktop
+//  - $wide: 1200px -> More...
 //
 // ============================================================================================= //
 
@@ -71,7 +80,7 @@ $max-desktop: $large !default;
                 @if $max-width {
                     @media (max-width: $max-width - 1) {
                         @if $prefix {
-                            #{"." + $prefix} {
+                            #{"." + $prefix} & {
                                 @content;
                             }
                         } @else {
@@ -80,7 +89,7 @@ $max-desktop: $large !default;
                     }
                 } @else {
                     @if $prefix {
-                        #{"." + $prefix} {
+                        #{"." + $prefix} & {
                             @content;
                         }
                     } @else {
@@ -91,7 +100,7 @@ $max-desktop: $large !default;
         } @else if $max-width {
             @media all and (max-width: $max-width - 1) {
                 @if $prefix {
-                    #{"." + $prefix} {
+                    #{"." + $prefix} & {
                         @content;
                     }
                 } @else {
