@@ -1,26 +1,31 @@
-// ============================================================================================= //
+// =============================================================================================== //
+// WARNING: Use this mixin that if you use another library that Compass, like LibSass for example,
+//          to generate Sass files !!!
+//
 // Mixin: retina
 //
 // Description: make HD images for HD mobiles screens
 //
 // Parameters:
-//  - $image: file name, without extension
+//  - $image: file path, without extension
+//  - $width: file width
+//  - $height: file height
 //  - $pixel-ratio: screen minimal pixel ratio, 1.5 by default
 //  - $extension: file extension ("png" by default)
 //  - $postfix: postfix for HD images reference ("_2x" by defaut)
 //
 // Inspired by:
 //  - https://github.com/kaelig/hidpi
-//  - http://www.brettjankord.com/2012/11/28/cross-browser-retinahigh-resolution-media-queries/
+//  - https://signalvnoise.com/posts/3271-easy-retina-ready-images-using-scss
 //
-// ============================================================================================= //
+// =============================================================================================== //
 
-@mixin retina($image, $pixel-ratio: 1.5, $extension: png, $postfix: _2x) {
+@mixin retina-legacy($image, $width, $height, $pixel-ratio: 1.5, $extension: png, $postfix: _2x) {
     $image-name: "#{$image}.#{$extension}";
     $image-hd-name: "#{$image}#{$postfix}.#{$extension}";
 
     @media(-webkit-min-device-pixel-ratio: $pixel-ratio), (min-resolution: $pixel-ratio * 96dpi) {
-        background-image: image-url($image-hd-name);
-        background-size: image-width($image-name) image-height($image-name);
+        background-image: url($image-hd-name);
+        background-size: #{$width * 1px} #{$height * 1px};
     }
 }
