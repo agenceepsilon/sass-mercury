@@ -36,10 +36,10 @@ Sass mixins & functions library!
 
 ## Variables
 
-| Variables        | Default   | Mixins dependencies        |
-| ---------------- | --------- | -------------------------- |
-| ``$oldie``       | ``false`` | All mixins config use this |
-| ``$media-query`` | ``true``  | breakpoint                 |
+| Variables          | Default   | Mixins dependencies        |
+| ------------------ | --------- | -------------------------- |
+| ``$oldie``         | ``false`` | All mixins config use this |
+| ``$media-queries`` | ``true``  | breakpoint                 |
 
 ### $oldie
 
@@ -72,7 +72,7 @@ Call the file with conditional comments.
         }
     }
 
-### $media-query
+### $media-queries
 
 This variable is used to decide whether the parameters placed in a breakpoint is generated or not.
 

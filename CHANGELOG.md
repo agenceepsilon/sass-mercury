@@ -1,6 +1,6 @@
 # Changelog
 
-## Future release
+## 2.0.1
 
 * Mixins
     * ``retina`` rename to ``retina-compass`` ([#13](https://github.com/agenceepsilon/sass-mercury/issues/13))
