@@ -20,7 +20,7 @@
 //
 // =============================================================================================== //
 
-@mixin retina-legacy($image, $width, $height, $pixel-ratio: 1.5, $extension: png, $postfix: _2x) {
+@mixin retina($image, $width, $height, $pixel-ratio: 1.5, $extension: png, $postfix: _2x) {
     $image-name: "#{$image}.#{$extension}";
     $image-hd-name: "#{$image}#{$postfix}.#{$extension}";
 

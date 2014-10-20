@@ -15,7 +15,7 @@
 //
 // ============================================================================================= //
 
-@mixin retina($image, $pixel-ratio: 1.5, $extension: png, $postfix: _2x) {
+@mixin retina-compass($image, $pixel-ratio: 1.5, $extension: png, $postfix: _2x) {
     $image-name: "#{$image}.#{$extension}";
     $image-hd-name: "#{$image}#{$postfix}.#{$extension}";
 
