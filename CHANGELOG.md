@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.0.2
+
+* Mixins:
+    * Fix retina names
+
 ## 2.0.1
 
 * Mixins
