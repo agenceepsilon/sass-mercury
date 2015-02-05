@@ -9,7 +9,6 @@ Sass mixins & functions library!
 | Requirements                        | Versions |
 | ----------------------------------- | -------- |
 | [Sass](http://sass-lang.com)        | ~3.3.0   |
-| [Compass](http://compass-style.org) | ~1.0.0   |
 
 ## Functions
 
@@ -20,17 +19,16 @@ Sass mixins & functions library!
 
 ## Mixins
 
-| Mixins         | Functions dependencies | helpers.scss dependencies | Compass dependencies |
-| -------------- | ---------------------- | ------------------------- | -------------------- |
-| breakpoint     | None                   | No                        | No                   |
-| font-face      | None                   | No                        | No                   |
-| gradient       | None                   | No                        | No                   |
-| grid           | **breakpoint**         | No                        | No                   |
-| opacity        | None                   | No                        | No                   |
-| rem-size       | **rem**                | No                        | No                   |
-| retina         | None                   | No                        | No                   |
-| retina-compass | None                   | No                        | **Yes**              |
-| selection      | None                   | No                        | No                   |
+| Mixins         | Functions dependencies | helpers.scss dependencies |
+| -------------- | ---------------------- | ------------------------- |
+| breakpoint     | None                   | No                        |
+| font-face      | None                   | No                        |
+| gradient       | None                   | No                        |
+| grid           | **breakpoint**         | No                        |
+| opacity        | None                   | No                        |
+| rem-size       | **rem**                | No                        |
+| retina         | None                   | No                        |
+| selection      | None                   | No                        |
 
 ## Variables
 
