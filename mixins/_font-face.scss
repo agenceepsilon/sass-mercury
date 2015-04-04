@@ -6,21 +6,47 @@
 // Compatibility: IE 7+, Firefox 4+, Chrome 1+, Safari 5+, Opera 15+
 //
 // Parameters:
-//  - $name: name for the "font-family" parameter
-//  - $path: the path to the font file. Enter only the filename if no folder is present in the
-//           "fonts" folder, the path begins always by "fonts/".
+//  - $font-family: name for the "font-family" parameter
+//  - $file-path: the path to the font file
+//  - $font-style: choose font-style (default: normal)
+//  - $font-weight: choose font-weight (default: normal)
+//  - $formats: choose the formats you want to use (default: eot svg woff2 woff ttf)
 //
 // ============================================================================================= //
 
-@mixin font-face($name, $path) {
+@mixin font-face($font-family, $file-path, $font-style: normal, $font-weight: normal, $formats: eot svg woff2 woff ttf) {
     @font-face {
-        font-family: "#{$name}";
-        src: url("fonts/#{$path}.eot");
-        src: url("fonts/#{$path}.eot?#iefix") format("embedded-opentype"),
-             url("fonts/#{$path}.svg##{$name}") format("svg"),
-             url("fonts/#{$path}.woff") format("woff"),
-             url("fonts/#{$path}.ttf") format("truetype");
-        font-weight: normal;
-        font-style: normal;
+        font-family: "#{$font-family}";
+
+        @each $format in $formats {
+            // EOT Format
+            @if $format == "eot" {
+                src: url("#{$file-path}.#{$format}");
+                src: url("#{$file-path}.#{$format}?#iefix") format("embedded-opentype");
+            }
+
+            // SVG Format
+            @if $format == "svg" {
+                src: url("#{$file-path}.#{$format}##{$font-family}") format("#{$format}");
+            }
+
+            // TTF Format
+            @if $format == "ttf" {
+                src: url("#{$file-path}.#{$format}") format("truetype");
+            }
+
+            // WOFF Format
+            @if $format == "woff" {
+                src: url("#{$file-path}.#{$format}") format("#{$format}");
+            }
+
+            // WOFF2 Format
+            @if $format == "woff2" {
+                src: url("#{$file-path}.#{$format}") format("#{$format}");
+            }
+        }
+
+        font-style: $font-style;
+        font-weight: $font-weight;
     }
 }
