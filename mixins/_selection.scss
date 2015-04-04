@@ -6,11 +6,11 @@
 // Parameters:
 //  - $background: background color in HEX or RGBa
 //  - $color: font color in HEX or RGBa
-//  - $prefix: boolean (false by default)
+//  - $prefixes: boolean/array choose the prefix you want to use (default: -moz-)
 //
 // ============================================================================================= //
 
-@mixin selection($background, $color, $prefix: false) {
+@mixin selection($background, $color, $prefixes: -moz-) {
 
     ::selection {
         background: $background;
@@ -18,8 +18,8 @@
         text-shadow: none;
     }
 
-    @if $prefix {
-        @each $prefix in -moz- {
+    @if $prefixes {
+        @each $prefix in $prefixes {
             ::#{$prefix}selection {
                 background: $background;
                 color: $color;
