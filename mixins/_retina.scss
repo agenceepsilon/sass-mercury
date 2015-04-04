@@ -11,7 +11,7 @@
 //  - $width: original file width (ratio 1)
 //  - $height: original file height(ratio 1)
 //  - $pixel-ratio: screen minimal pixel ratio, 1.5 by default
-//  - $extension: file extension ("png" by default)
+//  - $format: file extension ("png" by default)
 //  - $postfix: postfix for HD images reference ("_2x" by defaut)
 //
 // Inspired by:
@@ -20,9 +20,8 @@
 //
 // =============================================================================================== //
 
-@mixin retina($image, $width, $height, $pixel-ratio: 1.5, $extension: png, $postfix: _2x) {
-    $image-name: "#{$image}.#{$extension}";
-    $image-hd-name: "#{$image}#{$postfix}.#{$extension}";
+@mixin retina($image, $width, $height, $pixel-ratio: 1.5, $format: png, $postfix: _2x) {
+    $image-hd-name: "#{$image}#{$postfix}.#{$format}";
 
     @media(-webkit-min-device-pixel-ratio: $pixel-ratio), (min-resolution: $pixel-ratio * 96dpi) {
         background-image: url($image-hd-name);
