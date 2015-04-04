@@ -3,15 +3,17 @@
 // ============================================================================================= //
 
 // ------------------------------------------------------------------------- //
-// POSITION CLASS
+// POSITIONS CLASS
 // ------------------------------------------------------------------------- //
 
 .left {
     float: left;
 }
+
 .right {
     float: right;
 }
+
 .center {
     margin: 0 auto;
 }
@@ -32,25 +34,15 @@
     @if $oldie {
         *zoom: 1;
     }
-    &--reset {
-        &:before,
-        &:after {
-            content: "";
-            display: inline;
-        }
-        &:after {
-            clear: none;
-        }
-        @if $oldie {
-            *zoom: normal;
-        }
-    }
 }
-.clear {
-    clear: both;
-    &--reset {
-        clear: none;
-    }
+
+// ------------------------------------------------------------------------- //
+// HIDDEN CLASS
+// ------------------------------------------------------------------------- //
+
+.hidden {
+    display: none;
+    visibility: hidden;
 }
 
 // ------------------------------------------------------------------------- //
@@ -73,41 +65,4 @@
     -ms-hyphens: auto;
     -o-hyphens: auto;
     hyphens: auto;
-}
-
-// ------------------------------------------------------------------------- //
-// HIDDEN CLASS
-// ------------------------------------------------------------------------- //
-
-.hidden {
-    display: none;
-    visibility: hidden;
-    &--mobile {
-        display: none;
-        visibility: hidden;
-        @include breakpoint($medium) {
-            display: block;
-            visibility: visible;
-        }
-    }
-    &--tablet {
-        display: block;
-        visibility: visible;
-        @include breakpoint($medium, $large) {
-            display: none;
-            visibility: hidden;
-        }
-        @include breakpoint($large) {
-            display: block;
-            visibility: visible;
-        }
-    }
-    &--desktop {
-        display: block;
-        visibility: visible;
-        @include breakpoint($large) {
-            display: none;
-            visibility: hidden;
-        }
-    }
 }
