@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.1.0
+
+* Mixins:
+    * ``font-face`` add WOFF2 and news formats option *([#17](https://github.com/agenceepsilon/sass-mercury/issues/17))*
+    * ``gradient`` change prefixes option
+    * ``selection`` change prefixes option
+    * ``retina`` clean code
+
 ## 2.0.3
 
 * ``bower.json`` update
