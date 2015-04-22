@@ -76,18 +76,18 @@ $max-desktop: $large !default;
 @mixin breakpoint($min-width: false, $max-width: false, $prefix: false) {
     @if $media-queries {
         @if $min-width {
-            @media all and (min-width: $min-width) {
-                @if $max-width {
-                    @media (max-width: $max-width - 1) {
-                        @if $prefix {
-                            #{"." + $prefix} & {
-                                @content;
-                            }
-                        } @else {
+            @if $max-width {
+                @media all and (min-width: $min-width) and (max-width: $max-width - 1) {
+                    @if $prefix {
+                        #{"." + $prefix} & {
                             @content;
                         }
+                    } @else {
+                        @content;
                     }
-                } @else {
+                }
+            } @else {
+                @media all and (min-width: $min-width) {
                     @if $prefix {
                         #{"." + $prefix} & {
                             @content;
