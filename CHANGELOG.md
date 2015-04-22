@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.1.1
+
+* Mixins:
+    * ``breakpoint`` fix css syntax for Internet Explorer issue
+    
 ## 2.1.0
 
 * Mixins:
