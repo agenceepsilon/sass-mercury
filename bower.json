@@ -5,7 +5,6 @@
     "main": [
         "_helpers.scss",
         "_mercury.scss",
-        "_mercury.scss",
         "functions/_em.scss",
         "functions/_rem.scss",
         "mixins/_breakpoint.scss",
@@ -15,7 +14,6 @@
         "mixins/_opacity.scss",
         "mixins/_rem-size.scss",
         "mixins/_retina.scss",
-        "mixins/_retina-compass.scss",
         "mixins/_selection.scss"
     ],
     "ignore": [
