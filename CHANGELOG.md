@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.1.2
+
+* Helpers:
+    * Add ``.ir`` class for image replacement
+
 ## 2.1.1
 
 * Mixins:
