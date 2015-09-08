@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.1.3
+
+* Publish on NPM
+
 ## 2.1.2
 
 * Helpers:
