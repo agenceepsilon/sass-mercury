@@ -1,0 +1,23 @@
+{
+  "name": "sass-mercury",
+  "version": "2.1.3-beta.1",
+  "description": "Mercury - Sass mixins & functions library!",
+  "main": "_mercury.scss",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agenceepsilon/sass-mercury.git"
+  },
+  "keywords": [
+    "functions",
+    "library",
+    "mercury",
+    "mixins",
+    "sass"
+  ],
+  "author": "Boris Damevin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/agenceepsilon/sass-mercury/issues"
+  },
+  "homepage": "https://github.com/agenceepsilon/sass-mercury#readme"
+}
