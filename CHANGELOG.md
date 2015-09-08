@@ -17,6 +17,7 @@
     * ``gradient`` change prefixes option
     * ``selection`` change prefixes option
     * ``retina`` clean code
+* Normalize deleted
 
 ## 2.0.3
 
