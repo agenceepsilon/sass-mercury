@@ -15,37 +15,26 @@
 // ============================================================================================= //
 
 @mixin font-face($font-family, $file-path, $font-style: normal, $font-weight: normal, $formats: eot svg woff2 woff ttf) {
+    $src: null;
+
+    $formatMods: (
+        eot: "?",
+        svg: "#" + $font-family
+    );
+
+    $formatTypes: (
+        ttf: "truetype"
+    );
+
+    @each $format in $formats {
+        $formatMod: if(map-has-key($formatMods, $format), $format + map-get($formatMods, $format), $format);
+        $formatType: if(map-has-key($formatTypes, $format), map-get($formatTypes, $format), $format);
+        $src: append($src, url("#{$file-path}.#{$formatMod}") format("#{$formatType}"), comma);
+    }
+
     @font-face {
         font-family: "#{$font-family}";
-
-        @each $format in $formats {
-            // EOT Format
-            @if $format == "eot" {
-                src: url("#{$file-path}.#{$format}");
-                src: url("#{$file-path}.#{$format}?#iefix") format("embedded-opentype");
-            }
-
-            // SVG Format
-            @if $format == "svg" {
-                src: url("#{$file-path}.#{$format}##{$font-family}") format("#{$format}");
-            }
-
-            // TTF Format
-            @if $format == "ttf" {
-                src: url("#{$file-path}.#{$format}") format("truetype");
-            }
-
-            // WOFF Format
-            @if $format == "woff" {
-                src: url("#{$file-path}.#{$format}") format("#{$format}");
-            }
-
-            // WOFF2 Format
-            @if $format == "woff2" {
-                src: url("#{$file-path}.#{$format}") format("#{$format}");
-            }
-        }
-
+        src: $src;
         font-style: $font-style;
         font-weight: $font-weight;
     }
