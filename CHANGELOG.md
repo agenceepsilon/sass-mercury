@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.1.4
+
+* ``font-face`` fix `src` return *([#17](https://github.com/agenceepsilon/sass-mercury/issues/18))*
+
 ## 2.1.3
 
 * Publish on NPM
