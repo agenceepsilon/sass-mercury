@@ -8,14 +8,14 @@
 // Parameters:
 //  - $column: number of columns
 //  - $prefix: boolean
-//  - $cssBase: boolean
+//  - $css-base: boolean
 //
 // Dependencie:
 //  - Mixin: _breakpoint.scss
 //
 // ============================================================================================= //
 
-@mixin grid($column: 12, $prefix: false, $cssBase: true) {
+@mixin grid($column: 12, $prefix: false, $css-base: true) {
 
     @for $i from 1 through $column {
         .grid-#{$i}-col {
@@ -43,7 +43,7 @@
             }
         }
     }
-    @if($cssBase){
+    @if($css-base){
         .grid-col {
             float: none;
             @include breakpoint($medium) {
