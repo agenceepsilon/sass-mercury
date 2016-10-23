@@ -8,6 +8,7 @@
     "url": "git+https://github.com/agenceepsilon/sass-mercury.git"
   },
   "keywords": [
+    "breakpoint",
     "functions",
     "library",
     "mercury",

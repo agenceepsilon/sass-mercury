@@ -21,6 +21,7 @@
         ".gitignore"
     ],
     "keywords": [
+        "breakpoint",
         "functions",
         "library",
         "mercury",
