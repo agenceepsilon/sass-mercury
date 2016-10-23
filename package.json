@@ -1,6 +1,6 @@
 {
   "name": "sass-mercury",
-  "version": "2.1.4",
+  "version": "2.1.5",
   "description": "Mercury - Sass mixins & functions library!",
   "main": [
     "_helpers.scss",
@@ -21,6 +21,7 @@
     "url": "git+https://github.com/agenceepsilon/sass-mercury.git"
   },
   "keywords": [
+    "breakpoint",
     "functions",
     "library",
     "mercury",
