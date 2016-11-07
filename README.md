@@ -8,7 +8,7 @@ Sass mixins & functions library!
 
 | Requirements                        | Versions |
 | ----------------------------------- | -------- |
-| [Sass](http://sass-lang.com)        | ~3.3.0   |
+| [Sass](http://sass-lang.com)        | ^3.3.0   |
 
 ## Functions
 
@@ -19,7 +19,7 @@ Sass mixins & functions library!
 
 ## Mixins
 
-| Mixins         | Functions dependencies | helpers.scss dependencies |
+| Mixins         | Functions dependencies | Use helpers.scss          |
 | -------------- | ---------------------- | ------------------------- |
 | breakpoint     | None                   | No                        |
 | font-face      | None                   | No                        |
