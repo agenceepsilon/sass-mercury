@@ -1,7 +1,7 @@
 // ============================================================================================= //
 // Mixin: breakpoint
 //
-// Description: make your content responsive !
+// Description: make your content responsive!
 //
 // Parameters:
 //  - $min-width: choose the minimum width
@@ -10,7 +10,7 @@
 //
 // Defaults:
 //  - $media-queries: active or not the mixin, "true" by default
-//  - $max-desktop: maximum width for displaying browsers are not responsives, "large" by default
+//  - $max-desktop: maximum width for displaying browsers are not responsive, "large" by default
 //
 // Sizes:
 //  - $very-small: 320px -> iPhone
@@ -46,7 +46,7 @@ $small: 480px !default;
 // Size reference: iPad in portrait mode
 //
 // For tablets in landscape mode, the "large" value is applied,
-// because the screenshave the width of the desktop screens.
+// because the screen have the width of the desktop screens.
 // ------------------------------------------------------------------------- //
 
 $medium: 768px !default;
@@ -64,7 +64,7 @@ $large: 960px !default;
 $wide: 1200px !default;
 
 // ------------------------------------------------------------------------- //
-// Maximum width for displaying browsers are not responsives.
+// Maximum width for displaying browsers are not responsive.
 // ------------------------------------------------------------------------- //
 
 $max-desktop: $large !default;

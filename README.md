@@ -53,7 +53,7 @@ On top of the file place the variable ``$oldie: true;``.
 
 Call the file with conditional comments.
 
-#### Synthax
+#### Syntax
 
     .module {
         // For all browsers
@@ -72,7 +72,7 @@ Call the file with conditional comments.
 
 This variable is used to decide whether the parameters placed in a breakpoint is generated or not.
 
-The main use is for Intenet Explorer 7 and 8. It takes place in the false option in a dedicated IE file. Only parameters desktop will be generated in the CSS file.
+The main use is for Internet Explorer 7 and 8. It takes place in the false option in a dedicated IE file. Only parameters desktop will be generated in the CSS file.
 
 ## Helpers
 

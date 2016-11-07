@@ -4,7 +4,7 @@
 //
 // Mixin: retina
 //
-// Description: make HD images for HD mobiles screens
+// Description: make HD images for HD mobiles screens.
 //
 // Parameters:
 //  - $image: file path, without extension
@@ -12,7 +12,7 @@
 //  - $height: original file height(ratio 1)
 //  - $pixel-ratio: screen minimal pixel ratio, 1.5 by default
 //  - $format: file extension ("png" by default)
-//  - $postfix: postfix for HD images reference ("_2x" by defaut)
+//  - $postfix: postfix for HD images reference ("_2x" by default)
 //
 // Inspired by:
 //  - https://github.com/kaelig/hidpi
