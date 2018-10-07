@@ -10,19 +10,21 @@
 //  - $file-path: the path to the font file
 //  - $font-style: choose font-style (default: normal)
 //  - $font-weight: choose font-weight (default: normal)
-//  - $formats: choose the formats you want to use (default: eot svg woff2 woff ttf)
+//  - $formats: choose the formats you want to use (default: eot svg woff2 woff otf ttf)
 //
 // ============================================================================================= //
 
-@mixin font-face($font-family, $file-path, $font-style: normal, $font-weight: normal, $formats: eot svg woff2 woff ttf) {
+@mixin font-face($font-family, $file-path, $font-style: normal, $font-weight: normal, $formats: eot svg woff2 woff otf ttf) {
     $src: null;
 
     $formats-mods: (
-        eot: "?",
+        eot: "?#iefix",
         svg: "#" + $font-family
     );
 
     $format-types: (
+        eot: "embedded-opentype",
+        otf: "truetype",
         ttf: "truetype"
     );
 
