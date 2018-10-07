@@ -1,6 +1,6 @@
 # Mercury
 
-[![GitHub version](http://img.shields.io/github/release/agenceepsilon/sass-mercury.svg?style=flat-square)](https://github.com/agenceepsilon/sass-mercury/releases) [![Bower version](http://img.shields.io/bower/v/agenceepsilon/sass-mercury.svg?style=flat-square)](https://github.com/agenceepsilon/sass-mercury/releases)
+[![GitHub version](http://img.shields.io/github/release/agenceepsilon/sass-mercury.svg?style=flat-square)](https://github.com/agenceepsilon/sass-mercury/releases)
 
 Sass mixins & functions library!
 
