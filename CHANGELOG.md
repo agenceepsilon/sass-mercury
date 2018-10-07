@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.1.6
+
+* Add ``.otf`` font format. (#19)
+
 ## 2.1.5
 
 * Add ``sache.json`` for Sache.in manager.
