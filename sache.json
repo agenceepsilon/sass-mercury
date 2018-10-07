@@ -1,11 +1,11 @@
 {
-  "name": "sass-mercury",
-  "description": "Mercury - Sass mixins & functions library!",
-  "tags": [
-    "breakpoint",
-    "functions",
-    "library",
-    "mercury",
-    "mixins"
+    "name": "sass-mercury",
+    "description": "Mercury - Sass mixins & functions library!",
+    "tags": [
+        "breakpoint",
+        "functions",
+        "library",
+        "mercury",
+        "mixins"
     ]
 }
