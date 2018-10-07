@@ -25,7 +25,8 @@
             }
         }
     }
-    @if($prefix){
+
+    @if ($prefix) {
         @for $i from 1 through ($column - 1) {
             .prefix-#{$i} {
                 @include breakpoint($medium) {
@@ -34,6 +35,7 @@
                 }
             }
         }
+
         @for $i from 1 through ($column - 1) {
             .suffix-#{$i} {
                 @include breakpoint($medium) {
@@ -43,13 +45,16 @@
             }
         }
     }
-    @if($css-base){
+
+    @if ($css-base) {
         .grid-col {
             float: none;
+
             @include breakpoint($medium) {
                 float: left;
             }
         }
+
         &.grid-rtl .grid-col {
             @include breakpoint($medium) {
                 float: right;

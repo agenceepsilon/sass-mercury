@@ -28,9 +28,11 @@
         content: " ";
         display: table;
     }
+
     &:after {
         clear: both;
     }
+
     @if $oldie {
         *zoom: 1;
     }
