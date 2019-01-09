@@ -23,5 +23,8 @@
     "bugs": {
         "url": "https://github.com/agenceepsilon/sass-mercury/issues"
     },
-    "homepage": "https://github.com/agenceepsilon/sass-mercury#readme"
+    "homepage": "https://github.com/agenceepsilon/sass-mercury#readme",
+    "devDependencies": {
+        "node-sass": "^4.11.0"
+    }
 }
