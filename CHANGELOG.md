@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.1.8
+
+* Update NPM dependencies
+
 ## 2.1.7
 
 * Update NPM dependencies
