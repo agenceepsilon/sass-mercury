@@ -1,6 +1,6 @@
 {
     "name": "sass-mercury",
-    "version": "2.1.8",
+    "version": "2.2.0",
     "description": "Mercury - Sass mixins & functions library!",
     "main": "_mercury.scss",
     "repository": {

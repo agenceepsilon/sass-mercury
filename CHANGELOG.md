@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.2.0
+
+* Add files for each placeholder
+* Update NPM dependencies
+
 ## 2.1.8
 
 * Update NPM dependencies
