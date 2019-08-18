@@ -32,10 +32,10 @@ Sass mixins & functions library!
 
 ## Placeholders
 
-| Placeholder | Functions dependencies |
-| ----------- | ---------------------- |
-| ellipsis    | No                     |
-| hyphens     | No                     |
+| Placeholders | Functions dependencies |
+| ------------ | ---------------------- |
+| ellipsis     | No                     |
+| hyphens      | No                     |
 
 ## Variables
 
