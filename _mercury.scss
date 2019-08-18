@@ -33,3 +33,10 @@ $oldie: false !default;
 @import "mixins/_rem-size";
 @import "mixins/_retina";
 @import "mixins/_selection";
+
+// ------------------------------------------------------------------------- //
+// PLACEHOLDERS
+// ------------------------------------------------------------------------- //
+
+@import "placeholders/_ellipsis";
+@import "placeholders/_hyphens";

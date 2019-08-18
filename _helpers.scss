@@ -56,25 +56,3 @@
     text-shadow: none;
     color: transparent;
 }
-
-// ------------------------------------------------------------------------- //
-// TEXT-OVERFLOW
-// ------------------------------------------------------------------------- //
-
-%ellipsis {
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-}
-
-// ------------------------------------------------------------------------- //
-// TEXT-HYPHENS
-// ------------------------------------------------------------------------- //
-
-%hyphens {
-    -webkit-hyphens: auto;
-    -moz-hyphens: auto;
-    -ms-hyphens: auto;
-    -o-hyphens: auto;
-    hyphens: auto;
-}
