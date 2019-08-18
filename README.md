@@ -6,9 +6,9 @@ Sass mixins & functions library!
 
 ## Requirements
 
-| Requirements                        | Versions |
-| ----------------------------------- | -------- |
-| [Sass](http://sass-lang.com)        | ^3.3.0   |
+| Requirements                 | Versions |
+| ---------------------------- | -------- |
+| [Sass](http://sass-lang.com) | ^3.3.0   |
 
 ## Functions
 
@@ -19,16 +19,23 @@ Sass mixins & functions library!
 
 ## Mixins
 
-| Mixins         | Functions dependencies | Use helpers.scss          |
-| -------------- | ---------------------- | ------------------------- |
-| breakpoint     | None                   | No                        |
-| font-face      | None                   | No                        |
-| gradient       | None                   | No                        |
-| grid           | **breakpoint**         | No                        |
-| opacity        | None                   | No                        |
-| rem-size       | **rem**                | No                        |
-| retina         | None                   | No                        |
-| selection      | None                   | No                        |
+| Mixins     | Functions dependencies |
+| ---------- | ---------------------- |
+| breakpoint | No                     |
+| font-face  | No                     |
+| gradient   | No                     |
+| grid       | **breakpoint**         |
+| opacity    | No                     |
+| rem-size   | **rem**                |
+| retina     | No                     |
+| selection  | No                     |
+
+## Placeholders
+
+| Placeholder | Functions dependencies |
+| ----------- | ---------------------- |
+| ellipsis    | No                     |
+| hyphens     | No                     |
 
 ## Variables
 
@@ -73,7 +80,3 @@ Call the file with conditional comments.
 This variable is used to decide whether the parameters placed in a breakpoint is generated or not.
 
 The main use is for Internet Explorer 7 and 8. It takes place in the false option in a dedicated IE file. Only parameters desktop will be generated in the CSS file.
-
-## Helpers
-
-The ``_helpers.scss`` depends on the ``_mercury.scss`` file because some helpers use variables or mixins.
