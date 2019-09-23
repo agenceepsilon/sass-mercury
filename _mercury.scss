@@ -18,25 +18,25 @@ $oldie: false !default;
 // FUNCTIONS
 // ------------------------------------------------------------------------- //
 
-@import "functions/_em";
-@import "functions/_rem";
+@import "functions/em";
+@import "functions/rem";
 
 // ------------------------------------------------------------------------- //
 // MIXINS
 // ------------------------------------------------------------------------- //
 
-@import "mixins/_breakpoint";
-@import "mixins/_font-face";
-@import "mixins/_gradient";
-@import "mixins/_grid";
-@import "mixins/_opacity";
-@import "mixins/_rem-size";
-@import "mixins/_retina";
-@import "mixins/_selection";
+@import "mixins/breakpoint";
+@import "mixins/font-face";
+@import "mixins/gradient";
+@import "mixins/grid";
+@import "mixins/opacity";
+@import "mixins/rem-size";
+@import "mixins/retina";
+@import "mixins/selection";
 
 // ------------------------------------------------------------------------- //
 // PLACEHOLDERS
 // ------------------------------------------------------------------------- //
 
-@import "placeholders/_ellipsis";
-@import "placeholders/_hyphens";
+@import "placeholders/ellipsis";
+@import "placeholders/hyphens";

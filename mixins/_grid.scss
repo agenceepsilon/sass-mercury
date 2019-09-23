@@ -16,11 +16,11 @@
 // ============================================================================================= //
 
 @mixin grid($column: 12, $prefix: false, $css-base: true) {
-
     @for $i from 1 through $column {
         .grid-#{$i}-col {
             @include breakpoint($medium) {
                 $col-width: percentage($i / $column);
+
                 width: $col-width;
             }
         }
@@ -31,6 +31,7 @@
             .prefix-#{$i} {
                 @include breakpoint($medium) {
                     $col-width: percentage($i / $column);
+
                     margin-left: $col-width;
                 }
             }
@@ -40,6 +41,7 @@
             .suffix-#{$i} {
                 @include breakpoint($medium) {
                     $col-width: percentage($i / $column);
+
                     margin-right: $col-width;
                 }
             }

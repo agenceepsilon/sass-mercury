@@ -23,7 +23,7 @@
 @mixin retina($image, $width, $height, $pixel-ratio: 1.5, $format: png, $postfix: _2x) {
     $image-hd-name: "#{$image}#{$postfix}.#{$format}";
 
-    @media(-webkit-min-device-pixel-ratio: $pixel-ratio), (min-resolution: $pixel-ratio * 96dpi) {
+    @media (-webkit-min-device-pixel-ratio: $pixel-ratio), (min-resolution: $pixel-ratio * 96dpi) {
         background-image: url($image-hd-name);
         background-size: #{$width * 1px} #{$height * 1px};
     }

@@ -24,13 +24,16 @@
         $angle-old: top;
         $angle-norm: to bottom;
         $ie-type: 0;
-    } @else if $angle == "horizontal" {
+    }
+
+    @else if $angle == "horizontal" {
         $angle-old: left;
         $angle-norm: to right;
         $ie-type: 1;
     }
 
     background: #{$gradient}-gradient($angle-norm, $start-color $start-location, $end-color $end-location);
+
     @if $prefixes {
         @each $prefix in $prefixes {
             background: #{$prefix}#{$gradient}-gradient($angle-old, $start-color $start-location, $end-color $end-location);
@@ -38,6 +41,6 @@
     }
 
     @if $ie-filter {
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$start-color}', endColorstr='#{$end-color}', GradientType=#{$ie-type});
+        filter: progid:dximagetransform.microsoft.gradient(startColorstr="#{$start-color}", endColorstr="#{$end-color}", GradientType=#{$ie-type});
     }
 }

@@ -82,34 +82,45 @@ $max-desktop: $large !default;
                         #{"." + $prefix} & {
                             @content;
                         }
-                    } @else {
+                    }
+
+                    @else {
                         @content;
                     }
                 }
-            } @else {
+            }
+
+            @else {
                 @media all and (min-width: $min-width) {
                     @if $prefix {
                         #{"." + $prefix} & {
                             @content;
                         }
-                    } @else {
+                    }
+
+                    @else {
                         @content;
                     }
                 }
             }
-        } @else if $max-width {
+        }
+
+        @else if $max-width {
             @media all and (max-width: $max-width - 1) {
                 @if $prefix {
                     #{"." + $prefix} & {
                         @content;
                     }
-                } @else {
+                }
+
+                @else {
                     @content;
                 }
             }
         }
-    } @else if $min-width and $min-width <= $max-desktop and
-        (not $max-width or $max-width and $max-width >= $max-desktop) {
+    }
+
+    @else if $min-width and $min-width <= $max-desktop and (not $max-width or $max-width and $max-width >= $max-desktop) {
         @content;
     }
 }

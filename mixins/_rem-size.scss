@@ -14,7 +14,9 @@
 @mixin rem-size($size) {
     @if $oldie {
         font-size: $size * 1px;
-    } @else {
+    }
+
+    @else {
         font-size: rem($size);
     }
 }
