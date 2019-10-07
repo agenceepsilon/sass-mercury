@@ -8,7 +8,7 @@ Sass mixins & functions library!
 
 | Requirements                 | Versions |
 | ---------------------------- | -------- |
-| [Sass](http://sass-lang.com) | ^3.3.0   |
+| [Sass](http://sass-lang.com) | ^1.23.0  |
 
 ## Functions
 
