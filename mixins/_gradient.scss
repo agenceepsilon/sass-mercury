@@ -24,9 +24,7 @@
         $angle-old: top;
         $angle-norm: to bottom;
         $ie-type: 0;
-    }
-
-    @else if $angle == "horizontal" {
+    } @else if $angle == "horizontal" {
         $angle-old: left;
         $angle-norm: to right;
         $ie-type: 1;

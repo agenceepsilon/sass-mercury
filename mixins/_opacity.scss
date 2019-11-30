@@ -15,9 +15,7 @@
 
     @if $oldie {
         filter: alpha(opacity=#{$alpha-ie});
-    }
-
-    @else {
+    } @else {
         opacity: $alpha;
     }
 }
