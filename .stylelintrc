@@ -20,6 +20,7 @@
         "declaration-property-unit-whitelist": {
             "font-size": [
                 "em",
+                "rem",
                 "px",
                 "%"
             ]
