@@ -5,7 +5,7 @@
     "scripts": {
         "lint:css": "stylelint --fix \"**/*.scss\""
     },
-    "main": "_mercury.scss",
+    "main": "mercury.scss",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/agenceepsilon/sass-mercury.git"
