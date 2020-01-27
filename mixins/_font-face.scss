@@ -14,6 +14,8 @@
 //
 // ============================================================================================= //
 
+@use "sass:map";
+
 @mixin font-face($font-family, $file-path, $font-style: normal, $font-weight: normal, $formats: eot svg woff2 woff otf ttf) {
     $src: null;
 
@@ -29,8 +31,8 @@
     );
 
     @each $format in $formats {
-        $format-mod: if(map-has-key($formats-mods, $format), $format + map-get($formats-mods, $format), $format);
-        $format-type: if(map-has-key($format-types, $format), map-get($format-types, $format), $format);
+        $format-mod: if(map.has-key($formats-mods, $format), $format + map.get($formats-mods, $format), $format);
+        $format-type: if(map.has-key($format-types, $format), map.get($format-types, $format), $format);
         $src: append($src, url("#{$file-path}.#{$format-mod}") format("#{$format-type}"), comma);
     }
 
