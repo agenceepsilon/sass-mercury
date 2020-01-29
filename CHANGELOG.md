@@ -1,5 +1,19 @@
 # Changelog
 
+## 2.2.1
+
+### Added
+
+* Added LICENSE.md
+
+### Changed
+
+* Update NPM dependencies
+
+### Fixed
+
+* Fixed package-lock.json
+
 ## 2.2.0
 
 * Add files for each placeholder
