@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.2.2
+
+### Changed
+
+* Changed ``package.json`` file
+* Changed ``sache.json`` file
+
 ## 2.2.1
 
 ### Added

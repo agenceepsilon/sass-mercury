@@ -2,10 +2,12 @@
     "name": "sass-mercury",
     "description": "Mercury - Sass mixins & functions library!",
     "tags": [
-        "breakpoint",
+        "css",
+        "sass",
+        "front-end",
+        "responsive",
+        "mixins",
         "functions",
-        "library",
-        "mercury",
-        "mixins"
+        "library"
     ]
 }
