@@ -11,12 +11,12 @@
         "npm": ">=6.0.0"
     },
     "devDependencies": {
-        "stylelint": "^13.2.1",
+        "stylelint": "^13.3.3",
         "stylelint-config-standard": "^20.0.0",
-        "stylelint-scss": "^3.16.0"
+        "stylelint-scss": "^3.17.2"
     },
     "dependencies": {
-        "sass": "^1.26.3"
+        "sass": "^1.26.5"
     },
     "keywords": [
         "css",
