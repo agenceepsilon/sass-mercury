@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.3.0
+
+### Changed
+
+* Update NPM dependencies
+
 ## 2.2.2
 
 ### Changed

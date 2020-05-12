@@ -1,7 +1,7 @@
 {
     "name": "sass-mercury",
     "description": "Mercury - Sass mixins & functions library!",
-    "version": "2.2.2",
+    "version": "2.3.0",
     "scripts": {
         "lint:css": "stylelint --fix \"**/*.scss\""
     },

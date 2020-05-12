@@ -1,6 +1,8 @@
-# Mercury
+# Sass Mercury
 
-[![GitHub version](http://img.shields.io/github/release/agenceepsilon/sass-mercury.svg?style=flat-square)](https://github.com/agenceepsilon/sass-mercury/releases)
+[![Version](https://flat.badgen.net/npm/v/sass-mercury)](https://www.npmjs.com/package/sass-mercury)
+[![Download](https://flat.badgen.net/npm/dt/sass-mercury)](https://www.npmjs.com/package/sass-mercury)
+[![License](https://flat.badgen.net/npm/license/sass-mercury)](https://www.npmjs.com/package/sass-mercury)
 
 Sass mixins & functions library!
 
@@ -8,7 +10,7 @@ Sass mixins & functions library!
 
 | Requirements                 | Versions |
 | ---------------------------- | -------- |
-| [Sass](http://sass-lang.com) | ^1.23.0  |
+| [Sass](http://sass-lang.com) | ^1.26.0  |
 
 ## Functions
 
